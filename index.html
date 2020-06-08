@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.min-mandarino.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="item-right-top"><button>Открыть</button></div>
+    <div class="jqmWindow" id="zaym-form" style="position: absolute; display: none; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <a href="#" class="close jqmClose"><i></i></a>
+            <div class="final-step">
+                <div class="step__title_final">
+                    Спасибо!<br>Ваша заявка принята.<br>
+                    В течении 2 минут с вами свяжется менеджер
+                </div>
+            </div>
+                <div class="step-wrap">
+                    <div class="step-box">
+                        <div class="step__counter">Шаг <span id="stepCounter">1</span> из 4. Первый займ под 0%<sup>*</sup></div>
+                        <div class="step__title">Контактная информация</div>
+                        <form class="step-form">
+                            <input type="hidden" name="step" value="2">
+                            <input type="hidden" name="_csrf" value="dkeLzhd76CBO0ScoubtIyCNvNWV53a2UY_ZTYXB6yuEbNbiIcRaKaCiHQW7j6HqMYiB7Oh2yx-wwjj8ZRw-Qgw==">
+                            <input type="hidden" name="region_kladr" value="">
+                            <input type="hidden" name="city_kladr" value="">
+                            <div class="step-fields">
+                                <div class="step-row">
+                                    <div class="step-col step1">
+                                        <div class="text-field">
+                                            <input class="text-field__input" name="phone" type="tel" placeholder="Ваш телефон" im-insert="true">
+                                        </div>
+                                    </div>
+                                    <div class="step-col step1">
+                                        <div class="text-field">
+                                            <input class="text-field__input ui-autocomplete-input" name="email" type="email" placeholder="Ваш e-mail (неоябязательно)" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="step-col step1">
+                                        <div class="checkbox">
+                                            <label class="checkbox__label" for="check1">
+                                                Согласен с <a target="_blank" href="https://mandarino.su/docs/mandarino.su/public_offer.pdf">условиями публичной оферты</a>, <a target="_blank" href="https://mandarino.su/docs/mandarino.su/tariff.pdf">тарифами</a> сервиса, даю свое <a target="_blank" href="https://mandarino.su/docs/mandarino.su/private_data_agreement.pdf">согласие на обработку персональных данных</a> и <a target="_blank" href="https://mandarino.su/docs/mandarino.su/adv_agreement.pdf">на получение рекламных материалов</a>, осознаю что оплата услуг не гарантирует получение займа                                    </label>
+                                            <input type="checkbox" id="check1">
+                                            <div class="checkbox-item"></div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="step-col step2 hide">
+                                        <div class="text-field">
+                                            <input class="text-field__input ui-autocomplete-input" name="surname" type="text" placeholder="Фамилия" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="step-col step2 hide">
+                                        <div class="text-field">
+                                            <input class="text-field__input ui-autocomplete-input" name="name" type="text" placeholder="Имя" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="step-col step2 hide">
+                                        <div class="text-field">
+                                            <input class="text-field__input ui-autocomplete-input" name="middle_name" type="text" placeholder="Отчество" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="step-col step-col-order2 step2 hide">
+                                        <div class="checkbox checkbox--big">
+                                            <label class="checkbox__label" for="check2">Нет отчества</label>
+                                            <input type="checkbox" id="check2" name="isset_middle_name">
+                                            <div class="checkbox-item"></div>
+                                        </div>
+                                    </div>
+                                    <div class="step-col step2 hide">
+                                        <div class="step-fields--half">
+                                            <div class="text-field">
+                                                                                        <div class="step-hint birthday-hint hide">Дата рождения</div>
+                                                <input class="text-field__input" name="birthday" type="tel" placeholder="Дата рождения" im-insert="true">
+                                            </div>
+                                            <div class="text-field radio">
+                                                <div class="radio-item">
+                                                    <input type="radio" name="sex" value="0" checked="checked" id="gender1">
+                                                    <label class="radio__label" for="gender1">Муж</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" name="sex" value="1" id="gender2">
+                                                    <label class="radio__label" for="gender2">Жен</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="step-col step3 hide">
+                                        <div class="step-fields--third">
+                                            <div class="text-field text-field--small">
+                                                <div class="step-hint series-hint hide">Серия</div>
+                                                <input class="text-field__input" name="series" type="tel" placeholder="Серия" im-insert="true">
+                                            </div>
+                                            <div class="text-field text-field--big">
+                                                <div class="step-hint number-hint hide">Номер паспорта</div>
+                                                <input class="text-field__input" name="number" type="tel" placeholder="Номер паспорта" im-insert="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                <div class="step-col step3 hide">
+                                        <div class="step-fields--third">
+                                            <div class="text-field text-field--small1">
+                                                <div class="step-hint when_issued-hint hide">Дата выдачи</div>
+                                                <input class="text-field__input" name="when_issued" type="tel" placeholder="Дата выдачи" im-insert="true">
+                                            </div>
+                                            <div class="text-field text-field--small2">
+                                                <div class="step-hint unit_code-hint hide">Код подразделения</div>
+                                                <input class="text-field__input" name="unit_code" type="tel" placeholder="Код подразделения" im-insert="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                <div class="step-col step3 hide">
+                                        <div class="text-field">
+                                            <input class="text-field__input" name="issued_by" type="text" placeholder="Кем выдан">
+                                        </div>
+                                    </div>
+                                    <div class="step-col step3 hide">
+                                        <div class="text-field">
+                                            <input class="text-field__input" name="place_of_birth" type="text" placeholder="Место рождения">
+                                        </div>
+                                    </div>
+        
+                                    
+                                    <div class="step-col step4 hide">
+                                        <div class="text-field">
+                                            <input class="text-field__input ui-autocomplete-input" name="address_region" type="text" placeholder="Регион" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="step-col step4 hide">
+                                        <div class="text-field">
+                                            <input class="text-field__input" name="address_city" type="text" placeholder="Город">
+                                        </div>
+                                    </div>
+                                    <div class="step-col step4 hide">
+                                        <div class="text-field">
+                                            <input class="text-field__input" name="address_street" type="text" placeholder="Улица">
+                                        </div>
+                                    </div>
+                                    <div class="step-col step4 hide">
+                                        <div class="step-fields--half">
+                                            <div class="text-field">
+                                                <input class="text-field__input" name="address_house" type="text" placeholder="Дом">
+                                            </div>
+                                            <div class="text-field">
+                                                <input class="text-field__input" name="address_apartment" type="tel" placeholder="Квартира">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step-col step4 hide">
+                                        <div class="checkbox checkbox--big">
+                                            <label class="checkbox__label" for="checkAddr">Совпадает с фактическим</label>
+                                            <input type="checkbox" id="checkAddr" checked="checked">
+                                            <div class="checkbox-item"></div>
+                                        </div>
+                                    </div>
+        
+                                    <span class="step-row actual_address hide">
+                                        <div class="step-col step-col-full step4 hide">
+                                            <div class="step__title1">Фактический адрес</div>
+                                        </div>
+                                        <div class="step-col step4 hide">
+                                            <div class="text-field">
+                                                <input class="text-field__input actual_address ui-autocomplete-input" name="actual_address_region" type="text" placeholder="Регион" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="step-col step4 hide">
+                                            <div class="text-field">
+                                                <input class="text-field__input actual_address" name="actual_address_city" type="text" placeholder="Город">
+                                            </div>
+                                        </div>
+                                        <div class="step-col step4 hide">
+                                            <div class="text-field">
+                                                <input class="text-field__input actual_address" name="actual_address_street" type="text" placeholder="Улица">
+                                            </div>
+                                        </div>
+                                        <div class="step-col step4 hide">
+                                            <div class="step-fields--half">
+                                                <div class="text-field">
+                                                    <input class="text-field__input actual_address" name="actual_address_house" type="text" placeholder="Дом">
+                                                </div>
+                                                <div class="text-field">
+                                                    <input class="text-field__input actual_address" name="actual_address_apartment" type="tel" placeholder="Квартира">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </span>
+        
+                                    <div class="step-col continue step-col-right">
+                                        <div class="step-controls">
+                                            <a class="step__back hide" href="javascript:void(0);">
+                                                <i>
+                                                    <svg>
+                                                        <use xlink:href="#image-stepback"></use>
+                                                    </svg>
+                                                </i>
+                                                <span>Назад</span>
+                                            </a>
+                                            <input class="step__btn btn" type="button" value="Продолжить">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="step-progress">
+                            <div class="step-progress__bar">
+                                <div class="step-progress__bar-complete" style="width: 25%"></div>
+                            </div>
+                            <div class="step-progress__status">Вероятность одобрения займа <span id="percent">25%</span></div>
+                            <div class="step-progress__hint">
+                                <div class="step-progress__hint-icon">
+                                    <svg>
+                                        <use xlink:href="#image-attention">
+                                            <svg fill="none" viewBox="0 0 10 10" id="image-attention" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.799 0a4.799 4.799 0 1 1 0 9.598 4.799 4.799 0 0 1 0-9.598zm0 8.638a3.84 3.84 0 1 0 0-7.678 3.84 3.84 0 0 0 0 7.678zM4.75 2.303a.432.432 0 1 1 0 .864.432.432 0 0 1 0-.864zm.048 1.44a.288.288 0 0 1 .288.288v2.88a.288.288 0 0 1-.576 0V4.03a.288.288 0 0 1 .288-.288z" fill="#FFA44F"></path></svg>
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="step-progress__hint-text">Чтобы увеличить шанс введите e-mail</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="loader-bg"></div>
+        <div class="loader">
+            <img src="https://mandarino.su/images/ajax_loader.svg">
+        </div>
+        <!-- <script src="./js/jquery-3.5.0.min.js"></script> -->
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="./js/jquery.inputmask.bundle.js"></script>
+        <script src="./js/jquery.noty.packaged.min.js"></script>
+        <script src="./js/jqModal.js"></script>
+        <script>            
+            function Noty(widgetId, options) {
+                var finalOptions = $.extend({}, {"dismissQueue":true,"layout":"topCenter","theme":"relax","animation":{"open":"animated flipInX","close":"animated flipOutX"},"timeout":3000}, options);
+                return noty(finalOptions);
+            }
+        </script>
+        <script src="./js/popup-zaym.js"></script>
+</body>
+</html>
